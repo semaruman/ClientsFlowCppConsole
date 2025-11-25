@@ -65,7 +65,7 @@ int main() {
             }
         }
         cout << i + 1 << "-ая минута. " << "Номера клиентов в активной сессии: "; PrintClientVector(clientsInWork); cout<<"Количество клиентов в очереди : " << clientsInQueue.size()<< endl;
-        cout << "Номера клиентов в очереди: "; PrintClientQueue(clientsInQueue);
+        cout << "Клиенты в очереди: "; PrintClientQueue(clientsInQueue);
     }
 }
 
@@ -89,4 +89,5 @@ void PrintClientVector(vector<Client> v) {
     for (int i = 0; i < v.size(); i++) {
         cout << v[i].Id << " ";
     }
+    cout << endl;
 }
